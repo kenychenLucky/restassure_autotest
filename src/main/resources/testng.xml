@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Points" parallel="tests" thread-count="1">
+    <parameter name="param1" value="${param1}"/>
+    <parameter name="param2" value="${param2}"/>
+    <parameter name="param3" value="${param3}"/>
+    <!-- 测试套件 -->
+    <suite-files>
+        <!-- keny login -->
+        <suite-file path="autotest_login_testng.xml"/>
+        <suite-file path="autotest_reguser_testng.xml"/>
+
+    </suite-files>
+
+    <!-- 监听器 -->
+    <listeners>
+        <!-- 测试日志监听器 -->
+        <listener class-name="com.chancetop.listener.TestLogListener"/>
+        <!-- 优先级监听器 -->
+        <listener class-name="com.chancetop.listener.RePrioritizingListener"/>
+    </listeners>
+
+
+
+</suite>

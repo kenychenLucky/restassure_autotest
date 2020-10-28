@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Staging/Uat Test Suite" parallel="tests" thread-count="1">
+    <test name="chancetop login test" preserve-order="true">
+        <classes>
+
+            <class name="com.chancetop.autotest.reguser.Address"></class>
+            <class name="com.chancetop.autotest.reguser.RegUser"></class>
+            <class name="com.chancetop.autotest.reguser.location"></class>
+        </classes>
+    </test>
+
+
+</suite>

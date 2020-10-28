@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="kenychen Test Suite" parallel="tests" thread-count="2">
+    <test name="baidtu test" preserve-order="true">
+        <classes>
+            <class name="com.chancetop.autotest.login.TestBaidu">
+                <methods>
+                    <include name="testSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
